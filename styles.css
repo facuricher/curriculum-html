@@ -1,62 +1,136 @@
-body {
-    background-color: lightskyblue;
-
-}
-  
-body h1{
-      color: white;
-  }
-
-body h2 {
-    color: white;
-}
-
-/* estructuras */
-header{
-    border: 5px double;
-}
-
-section{
-    border: 5px double;
-}
-
-footer{
-    border: 5px double;
-}
-
-footer ul{
-    margin: 0;
+*{
+    margin:0;
     padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+
+li{
     list-style: none;
 }
 
-/* clases */
-.imagen{
-    width: 128px;
-    height: 154px;
-    margin: 18px;
-    padding: 10px;
-}
-    
-.imagen img{
-    width: 100%;
-    height: auto;
+h1, h2, h3, h4, h5, h6{
+    font-size: 30px;
+    color: rgb(27, 25, 25);
 }
 
-/* logotipo redes sociales */
-.imagen2{
-    width: 38px;
+h1{
+    border-bottom: 1px solid rgb(39, 34, 34);
+}
+
+.img{
+    width: 130px;
+    height: 130px;
+}
+
+.img img{
+    width: 100%;
+    height: auto;
+    border-radius:50%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+header{
+    border-bottom: 1px solid rgb(39, 34, 34);
+    background-color: rgb(224, 118, 118);
+    display: flex;
+    flex-direction: column;
+}
+header ul li{
+    margin-bottom: 10px;
+}
+
+header div{
+    display: flex;
+    justify-content: center;
+}
+
+header .header1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* section */
+section{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(39, 34, 34);
+    background-color: rgb(250, 223, 223);
+}
+
+section div{
+    margin-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 223, 223);
+}
+
+footer .h2footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+footer ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* pseudo clases */
+footer ul li a:link{
+    color: blue;
+}
+
+footer ul li a:visited{
+    color: royalblue;
+}
+
+footer ul li a:active{
+    color: red;
+}
+
+footer ul li a::before {
+    content: "";
+    display: inline-block;
+    background: url("https://3.bp.blogspot.com/-LHdLdAlA1E0/UyayLmE1XfI/AAAAAAAAETA/Jr90-IZUUvM/s1600/icon.png");
+    width: 20px;
+    width: 20px;
     height: 20px;
-    margin: 10px;
-    padding: 10px;
 }
 
-.imagen2 img{
-    width: 100%;
-    height: auto;
+/* @media queris */
+@media (min-width: 320px){
+    footer ul{
+        flex-direction: column;
+    }
+
+    header .header1{
+        flex-direction: column;
+    }
 }
-    
 
+@media (min-width: 768px){
+    footer ul{
+        flex-direction: row;
+    }
 
-
-
+    header .header1{
+        flex-direction: row;
+    }
+}

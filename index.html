@@ -5,42 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>curriculum html</title>
-    <link rel="stylesheet" href="C:\Users\Usuario\OneDrive\Escritorio\NUCBA\curriculum html\styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
         <header>
-                <h1>nombres y apellidos</h1>
-                <ul>
-                    <li>
-                        <span>Facundo Ezequiel Richer Casco</span>
-                    </li>
-                </ul>
-                <h2>datos personales:</h2>
-                <ul>
-                    <li>
-                        <span>edad: 19 años</span>
-                    </li>
-                    <li>
-                        <span>ocupacion: programador FullStack</span>
-                    </li>
-                    <li>
-                        <span>direccion: Los Andes </span>
-                    </li>
-                </ul>
-                <div class="imagen" >
-                    <img src="C:\Users\Usuario\OneDrive\Escritorio\NUCBA\curriculum html\20210416_213935.jpg" alt="perfil Facundo">
-                </div>
+            <div>
+                <h1>CURRICULUM VITAE</h1>
+            </div>
+            <div class="header1">
+                    <ul>
+                        <li>
+                            <h2>Nombre y Apellido</h2>
+                        </li>
+                        <li>
+                            <span>Facundo Ezequiel Richer Casco</span>
+                        </li>
+                        <li>
+                            <h2>datos personales</h2>
+                        </li>
+                        <li>
+                            <span>Edad: 20 años</span>
+                        </li>
+                        <li>
+                            <span>Ocupacion:programador</span>
+                        </li>
+                        <li>
+                            <span>Direccion: Los Andes</span>
+                        </li>
+                    </ul>
+                    <div class="img">
+                        <img src="20210416_213935.jpg" alt="perfil Facundo">
+                    </div>
+             </div>
         </header>
         <section>
-                <h2>sobre mi</h2>
+                <div>
+                    <h2>sobre mi</h2>
+                </div>
                 <p>
                     Mi objetivo principal es formar parte de un unequipo de trabajo en una empresa. y que
-                    mis logros sean reconociodos. Me considero apto para el trabajop colectivo-
+                    mis logros sean reconociodos. Me considero apto para el trabajo colectivo.
                 </p>
 
                 <div>
-                    <h2>estudios:</h2>
+                    <h2>estudios</h2>
                     <ul>
                         <li>
                             <span>Bachiller en Economia y Administracion de Empresas - 2019 - E.E.S N°5</span>
@@ -50,7 +61,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <div>
                     <h2>experiencia laboral</h2>
                     <ul>
@@ -61,26 +71,19 @@
                 </div>
         </section>
         <footer>
-            <h2>redes sociales:</h2>
-            <!-- linkedin -->
-            <div class="imagen2">
-                <img src="data:image/png;base64,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" alt="">
-            </div>
+            <ul class="h2footer">
+                <li>
+                    <h2>Redes sociales</h2>
+                </li>
+            </ul>
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/facundo-richer-casco-602231210/">Linkedin</a>
                 </li>
-            </ul>
-            <!-- instagram -->
-            <div class="imagen2">
-                <img src="data:image/png;base64,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" alt="instagram">
-            </div>
-            <ul>
                 <li>
                     <a href="https://www.instagram.com/facuricher/">Instagram</a>
                 </li>
             </ul>
-          
         </footer>
     </main>
 </body>
